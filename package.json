@@ -1,0 +1,27 @@
+{
+    "name": "sport-like",
+    "version": "1.0.0",
+    "description": "api, tienda de calzado deportivo.",
+    "main": "index.js",
+    "type": "module",
+    "repository": "https://github.com/LuisEduardoFrias/sport-like.git",
+    "author": "luis eduardo frias",
+    "license": "MIT",
+    "scripts": {
+        "dev": "node --watch src/index.js"
+    },
+    "dependencies": {
+        "api_httpc": "^1.0.5",
+        "cookie-parser": "^1.4.6",
+        "cors": "^2.8.5",
+        "dajts": "^1.6.6",
+        "express": "^4.19.2",
+        "jsonwebtoken": "^9.0.2"
+    },
+    "devDependencies": {
+        "standard": "17.1.0"
+    },
+    "eslintConfing": {
+        "extends": "standard"
+    }
+}

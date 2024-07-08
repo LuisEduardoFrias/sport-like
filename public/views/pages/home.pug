@@ -1,0 +1,11 @@
+extends ../layout/layout
+
+block content
+  h2 Products
+  
+  div.container_products
+    each _prod in products
+      div.card_product(id=_prod.id)
+          img(src=_prod.img alt=_prod.alt)
+          label #{_prod.name}
+          span #{_prod.price}
