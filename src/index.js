@@ -30,14 +30,10 @@ app.use(cors());
 const gate = new gateway(app, path.resolve(__dirname, '..'));
 
 const bodyRequire = ["userName", "password"];
-const configCookies = {
-  httpOnly: false,
-  secure: process.env.NODE_ENV === 'production',
-  saneSite: 'strict',
-  maxAge: 1000 * 60 * 60,
-}
 
 gate.routes('/', products);
 gate.routes('/', register);
+
+
 
 gate.listen(() => console.log(`server on port:${PORT}`));

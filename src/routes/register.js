@@ -1,8 +1,8 @@
 import express from 'express';
 import { router } from 'api_httpc';
 import jwt from "jsonwebtoken";
-import { SECRET_JWT_KEY } from "../config.js";
-import bodyRequire from '../midleware.js'
+import { SECRET_JWT_KEY } from '../config.js';
+import bodyRequire from '../midleware.js';
 
 import UserRepository from '../repositories/user_repository.js';
 
