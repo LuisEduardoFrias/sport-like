@@ -1,5 +1,5 @@
 datafile.daj.db
-
+/node_modules
 # Logs
 logs
 *.log
